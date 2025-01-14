@@ -1,0 +1,56 @@
+package com.dsa.arrays;
+
+public class Subarray_sort_code {
+	
+	static boolean outOfOrder(int[] num,int idx) {
+		int x = num[idx];
+		if(idx == 0) {
+			return x>num[1];
+		}
+		if(idx == num.length-1) {
+			return x<num[idx-1];
+		}
+		
+		return x>num[idx+1] || x<num[idx-1];
+	}
+	
+	static int[] subArraySort(int[] num) {
+		int[] sol = new int[2];
+		int smallest = Integer.MAX_VALUE;
+		int largest = Integer.MIN_VALUE;
+//		System.out.println("INPUT ARRAY"+Arrays.toString(num));
+		for(int i=0;i<num.length;i++) {
+			int x = num[i];
+			if(outOfOrder(num, i)) {
+				smallest = Math.min(smallest, x);
+				largest = Math.max(largest, x);
+			}
+		}
+		System.out.println("smallest -> "+smallest+"largest ->"+largest);
+		if(smallest == Integer.MAX_VALUE) {
+			sol[0] = -1;
+			sol[1] = 1;
+		}
+//		System.out.println("SMALLEST AND LARGEST"+smallest+" -- "+largest);
+		int left = 0,right = num.length-1;
+		while(smallest >= num[left]) {
+			left++;
+		}
+		while(largest <= num[right]) {
+			right--;
+		}
+
+		sol[0] = left;
+		sol[1] = right;
+		return sol;
+	}
+	
+	public static void main(String[] args) {
+//		int[] nos = {1,2,3,4,5,8,6,7,9,10,11};
+		int[] nos = {0, 2, 4, 7, 10, 11, 7, 12, 13, 14, 16, 19, 29};
+		int[] sol ;
+		sol = subArraySort(nos);
+		System.out.println(sol[0]+" "+sol[1]);
+	}
+
+}

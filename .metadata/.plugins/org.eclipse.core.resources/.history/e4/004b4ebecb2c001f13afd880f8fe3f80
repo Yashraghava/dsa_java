@@ -1,0 +1,24 @@
+package com.dsa.arrays;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Rains {
+
+	public static void main(String[] args) {
+		int[] heights = {0,1,0,2,1,0,1,3,2,1,2,1};
+		int len = heights.length;
+		List<Integer> left = new ArrayList<Integer>(Collections.nCopies(len, 0));
+		List<Integer> right = new ArrayList<Integer>(Collections.nCopies(len, 0));
+		left.set(0, heights[0]);
+		right.set(len-1, heights[len-1]);
+		for(int i=1;i<len-2;i++) {
+			left.set(i,Integer.max(left.get(i-1), heights[i]) );
+			right.set(len-i-1,Integer.max(right.get(len-i), heights[len-i-1]));
+		}
+		for(int i=0;i<len;i++) {
+			System.out.print(" "+Integer.min(left.get(i), right.get(i)-heights[i]));
+		}
+	}
+}

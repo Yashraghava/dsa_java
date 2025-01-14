@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 5 elements to &apos;DSA/src/com.dsa.arrays&apos;&#x0D;&#x0A;- Original project: &apos;DSA&apos;&#x0D;&#x0A;- Destination element: &apos;DSA/src/com.dsa.arrays&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Mountain&#x0D;&#x0A;     PairSum&#x0D;&#x0A;     Triplets&#x0D;&#x0A;     Longest_Common_Subsequence&#x0D;&#x0A;     Rains&#x0D;&#x0A;- Update references to refactored element" description="Move files" destination="/src&lt;com.dsa.arrays" element1="Mountain" element2="PairSum" element3="Triplets" element4="Longest_Common_Subsequence" element5="Rains" files="5" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1720715755415" units="0" version="1.0"/>
+</session>

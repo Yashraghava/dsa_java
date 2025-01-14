@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;min_so_far&apos; in &apos;com.dsa.sliding_window.Smallest_Distinct_Window.smallest_window(...)&apos; to &apos;max_so_far&apos;&#x0D;&#x0A;- Original project: &apos;DSA&apos;&#x0D;&#x0A;- Original element: &apos;com.dsa.sliding_window.Smallest_Distinct_Window.smallest_window(String).min_so_far&apos;&#x0D;&#x0A;- Renamed element: &apos;min_so_far&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;min_so_far&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.dsa.sliding_window{Smallest_Distinct_Window.java[Smallest_Distinct_Window~smallest_window~QString;@min_so_far!236!252!240!249!I!0!false" name="max_so_far" references="true" stamp="1720943676342" version="1.0"/>
+</session>

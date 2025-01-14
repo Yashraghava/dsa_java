@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;pairs&apos; in &apos;com.dsa.arrays.Triplets.main(...)&apos; to &apos;triplet&apos;&#x0D;&#x0A;- Original project: &apos;DSA&apos;&#x0D;&#x0A;- Original element: &apos;com.dsa.arrays.Triplets.main(String[]).pairs&apos;&#x0D;&#x0A;- Renamed element: &apos;pairs&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;pairs&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.dsa.arrays{Triplets.java[Triplets~main~\[QString;@pairs!209!258!251!255!I!0!false" name="triplet" references="true" stamp="1718211775357" version="1.0"/>
+</session>
