@@ -1,5 +1,5 @@
 # Data Structures and Algorithms
-This respository contains the solution to some important problems of Data Structures and Algorithms.All the algorithms are implemented in
+This repository contains the solution to some important problems of Data Structures and Algorithms.All the algorithms are implemented in
 <br>
 
 <p style="color:green"><img src ="vY0qVbBRRk.gif" height="400" width="400">
