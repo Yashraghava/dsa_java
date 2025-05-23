@@ -1,0 +1,23 @@
+package com.java.latest_version;
+
+
+//import java.util.concurrent.Executors;
+
+public class VirtualThreadRunner {
+	public static void main(String[] args) {
+//		Executors.newV
+//		for(int i=0;i<1000000;i++) {
+//			Thread.State.
+//		}		
+		System.out.println(System.getProperty("java.version"));
+		System.out.println("ABC");
+		for(int i=0;i< 1000000;i++)
+		{
+			System.out.println(i);
+//			new Thread(new SleepingThread()).start();
+//			Thread.startVirtualThread(new SleepingThread());
+			Thread.ofVirtual().start(new SleepingThread());
+		}
+	}
+
+}

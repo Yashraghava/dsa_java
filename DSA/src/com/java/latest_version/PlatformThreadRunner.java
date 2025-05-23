@@ -1,0 +1,29 @@
+package com.java.latest_version;
+
+import java.util.concurrent.TimeUnit;
+
+public class PlatformThreadRunner {
+
+	static class SleepingThread implements Runnable{
+
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+			try {
+				TimeUnit.SECONDS.sleep(1);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		for(int i=0;i< 1000000;i++)
+		{
+			System.out.println(i);
+			new Thread(new SleepingThread()).start();
+		}
+	}
+}
