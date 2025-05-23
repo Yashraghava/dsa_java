@@ -1,7 +1,6 @@
 package com.dsa.sort_and_search;
 
 import java.util.ArrayList;
-import java.util.Vector;
 
 public class QuickSelect {
 

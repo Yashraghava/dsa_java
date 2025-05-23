@@ -1,8 +1,5 @@
 package com.dsa.recursion;
 
-// Java program to find out maximum value from a
-// given sequence of coins
-import java.io.*;
 import java.util.Arrays;
 
 class GameOfCoinOptimal {

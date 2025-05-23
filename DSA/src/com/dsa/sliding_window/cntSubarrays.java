@@ -1,7 +1,8 @@
 package com.dsa.sliding_window;
 // Java program to count subarrays having sum K
 // using Hash Map
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 class cntSubarrays {
 	// Function to find number of subarrays with sum as k

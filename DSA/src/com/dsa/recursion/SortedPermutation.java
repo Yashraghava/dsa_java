@@ -2,7 +2,7 @@ package com.dsa.recursion;
 // Java Program to print all permutations
 // of a string in sorted order.
 
-import java.util.*;
+import java.util.Arrays;
 
 class SortedPermutation 
 {

@@ -1,5 +1,5 @@
 package com.dsa.recursion;
-import java.util.*;
+import java.util.Arrays;
 
 // An optimized version that uses reverse instead of sort
 // for finding the next permutation
