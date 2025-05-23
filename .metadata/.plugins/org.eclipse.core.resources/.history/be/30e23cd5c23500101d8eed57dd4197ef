@@ -1,0 +1,14 @@
+
+package com.java.latest_version;
+
+import java.time.DayOfWeek;
+
+public class SwitchEnumRunner {
+	public static void main(String[] args) {
+		DayOfWeek dayOfWeek = DayOfWeek.MONDAY;
+		String str =switch(dayOfWeek) {
+		case MONDAY -> "First Day of the week";
+		};
+	}
+
+}

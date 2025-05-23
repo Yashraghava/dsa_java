@@ -1,0 +1,10 @@
+package com.java.latest_version;
+
+import java.util.ArrayList;
+
+public class SequencedListRunner {
+	public static void main(String[] args) {
+		var courseDetails =  new ArrayList<Integer>();
+	}
+
+}

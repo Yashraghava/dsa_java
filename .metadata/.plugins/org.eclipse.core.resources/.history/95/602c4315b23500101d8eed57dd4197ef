@@ -1,0 +1,29 @@
+package com.java.latest_version;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.List;
+
+public class SequencedSetRunner {
+	public static void main(String[] args) {
+		var courses = List.of("Spring","Spring Boot","AWS","Azure");
+		var courseDetailsSet = new LinkedHashSet<>(courses);
+		courseDetailsSet.add("Spring Boot");
+		courseDetailsSet.add("Spring Security");
+		courseDetailsSet.add("Spring Boot in AI");
+		
+		courseDetailsSet.add("Cloud Computing with AWS");	
+		courseDetailsSet.add("Cloud Computing with Azure");
+		System.out.println("Set :: -> "+courseDetailsSet);
+		System.out.println(courseDetailsSet.getFirst());
+		System.out.println(courseDetailsSet.getLast());
+		
+//		System.out.println("List :: -> "+courseDetails);
+		System.out.println("Remove First Element :: -> "+courseDetailsSet.removeFirst());
+		System.out.println("Remove Last Element :: -> "+courseDetailsSet.removeLast());
+		
+		var courseDetailsReversed = courseDetails.reversed();
+		System.out.println("Reversed List :: ->"+courseDetailsReversed);
+	}
+}

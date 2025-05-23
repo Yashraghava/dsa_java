@@ -1,0 +1,35 @@
+package com.java.latest_version;
+
+
+public class PatternMatchingRunner {
+	record Transaction(String sender,String receiver,Integer amount) {}
+	
+	private static void printTransactionOld(Object objTransaction) {
+		if (objTransaction instanceof Transaction transaction) {
+			String sender = transaction.sender;
+			String receiver = transaction.receiver;
+			Integer amount = transaction.amount;
+
+			System.out.println(sender + " " + receiver + " " + amount);
+		}
+	}
+	public static void main(String[] args) {
+		Object objStr = "Some String";
+		instanceOfOld(objStr);
+		instanceOfNew(objStr);
+		printTransactionOld(new Transaction("You","Me", 1000000));
+	}
+	
+	private static void instanceOfOld(Object objStr) {
+		if(objStr instanceof String) {
+			String str = (String)objStr;
+			System.out.println(str.toLowerCase());
+		}
+	}
+	private static void instanceOfNew(Object objStr) {
+		if(objStr instanceof String str) {
+//			String str = (String)objStr;
+			System.out.println("--"+str.toLowerCase());
+		}
+	}
+}

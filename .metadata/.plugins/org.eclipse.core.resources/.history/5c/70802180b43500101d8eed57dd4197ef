@@ -1,0 +1,29 @@
+package com.java.latest_version;
+
+import java.util.LinkedHashMap;
+
+public class SequencedMapRunner {
+	public static void main(String[] args) {
+		var courseDetails = new LinkedHashMap<>();
+		courseDetails.put(1, "Spring");
+		courseDetails.put(2, "Spring Boot");
+		courseDetails.put(3, "Spring AI");
+		
+		System.out.println("Map ::"+courseDetails);
+		courseDetails.putFirst(10, "Spring Security");
+		courseDetails.putLast(20, "Spring Cloud");
+		System.out.println("Map ::"+courseDetails);
+		
+		System.out.println("First Entry :: -> "+courseDetails.firstEntry());
+		System.out.println("Last Entry :: -> "+courseDetails.lastEntry());
+
+		System.out.println("KeySet:: "+courseDetails.keySet());
+		System.out.println("ValueSet:: "+courseDetails.values());
+		System.out.println("EntrySet:: "+courseDetails.entrySet());
+		
+		System.out.println("SequencedKeySet:: "+courseDetails.sequencedKeySet());
+		System.out.println("SequencedValueSet:: "+courseDetails.sequencedValues());
+		System.out.println("SequencedEntrySet:: "+courseDetails.sequencedValues());
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.java.latest_version;
+
+import java.util.ArrayList;
+
+public class SequencedListRunner {
+	public static void main(String[] args) {
+		var courseDetails =  new ArrayList<>();
+		courseDetails.add("Spring Boot");
+		courseDetails.add("Spring Security");
+		courseDetails.add("Spring Boot in AI");
+		
+		System.out.println("List :: -> "+courseDetails);
+	}
+
+}
