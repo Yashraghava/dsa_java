@@ -40,4 +40,8 @@
     <fullyQualifiedTypeName name="com.java.latest_version.PlatformThreadRunner.SleepingThread"/>
     <fullyQualifiedTypeName name="java.lang.Thread.State"/>
     <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+    <fullyQualifiedTypeName name="com.java.latest_version.SwitchRecordsRunner.Message"/>
+    <fullyQualifiedTypeName name="com.java.latest_version.SwitchRecordsRunner.CustomerMessage"/>
+    <fullyQualifiedTypeName name="com.java.latest_version.SwitchRecordsRunner.Feedback"/>
+    <fullyQualifiedTypeName name="com.java.latest_version.SwitchRecordsRunner.SupportRequest"/>
 </qualifiedTypeNameHistroy>
